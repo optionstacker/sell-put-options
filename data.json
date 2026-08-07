@@ -1,0 +1,82 @@
+[
+  {
+    "option": "U260731P00028500",
+    "expiry": "2026-07-31",
+    "type": "Put",
+    "strike": 28.5,
+    "close": 31.72,
+    "assigned": "No"
+  },
+  {
+    "option": "DPST260731P00137000",
+    "expiry": "2026-07-31",
+    "type": "Put",
+    "strike": 137.0,
+    "close": 146.04,
+    "assigned": "No"
+  },
+  {
+    "option": "T260731P00037000",
+    "expiry": "2026-07-31",
+    "type": "Put",
+    "strike": 37.0,
+    "close": 37.27,
+    "assigned": "No"
+  },
+  {
+    "option": "ZETA260724P00020500",
+    "expiry": "2026-07-24",
+    "type": "Put",
+    "strike": 20.5,
+    "close": 19.13,
+    "assigned": "Yes"
+  },
+  {
+    "option": "LW260724P00045000",
+    "expiry": "2026-07-24",
+    "type": "Put",
+    "strike": 45.0,
+    "close": 49.64,
+    "assigned": "No"
+  },
+  {
+    "option": "LW260724P00044000",
+    "expiry": "2026-07-24",
+    "type": "Put",
+    "strike": 44.0,
+    "close": 49.64,
+    "assigned": "No"
+  },
+  {
+    "option": "LW260724P00043000",
+    "expiry": "2026-07-24",
+    "type": "Put",
+    "strike": 43.0,
+    "close": 49.64,
+    "assigned": "No"
+  },
+  {
+    "option": "RNG260724P00035000",
+    "expiry": "2026-07-24",
+    "type": "Put",
+    "strike": 35.0,
+    "close": 48.36,
+    "assigned": "No"
+  },
+  {
+    "option": "LW260724P00042000",
+    "expiry": "2026-07-24",
+    "type": "Put",
+    "strike": 42.0,
+    "close": 49.64,
+    "assigned": "No"
+  },
+  {
+    "option": "LW260724P00041000",
+    "expiry": "2026-07-24",
+    "type": "Put",
+    "strike": 41.0,
+    "close": 49.64,
+    "assigned": "No"
+  }
+]

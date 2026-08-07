@@ -8,7 +8,7 @@
   {"option":"DPST260807P00148000","expiry":"2026-08-07","type":"Put","strike":148,"close":146.17,"assigned":"Yes"},
   {"option":"DBX260807P00031000","expiry":"2026-08-07","type":"Put","strike":31,"close":34.81,"assigned":"No"},
   {"option":"GTLB260807P00034000","expiry":"2026-08-07","type":"Put","strike":34,"close":38.97,"assigned":"No"},
-  {"option":"IOT260731P00037000","expiry":"2026-08-07","type":"Put","strike":37,"close":40.88,"assigned":"No"}
+  {"option":"IOT260731P00037000","expiry":"2026-08-07","type":"Put","strike":37,"close":40.88,"assigned":"No"},
   {"option":"U260731P00028500","expiry":"2026-07-31","type":"Put","strike":28.5,"close":31.72,"assigned":"No"},
   {"option":"DPST260731P00137000","expiry":"2026-07-31","type":"Put","strike":137,"close":146.04,"assigned":"No"},
   {"option":"T260731P00037000","expiry":"2026-07-31","type":"Put","strike":37,"close":37.27,"assigned":"No"},

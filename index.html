@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Options Ledger — Cash-Secured Puts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #eceff1;
+    --paper-raised: #f5f7f8;
+    --ink: #1c2733;
+    --ink-soft: #5b6b7a;
+    --rule: #c5ccd2;
+    --teal: #0f6e5e;
+    --teal-soft: #e2efec;
+    --rust: #a8402a;
+    --rust-soft: #f3e4df;
+    --amber: #9c7a1f;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'IBM Plex Mono', monospace;
+    padding: 0 0 80px;
+  }
+
+  header {
+    padding: 64px 24px 40px;
+    max-width: 980px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .eyebrow {
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 0 0 12px;
+  }
+
+  h1 {
+    font-family: 'Spectral', serif;
+    font-weight: 600;
+    font-size: 42px;
+    margin: 0 0 10px;
+    letter-spacing: -0.01em;
+  }
+
+  header p.sub {
+    color: var(--ink-soft);
+    font-size: 14px;
+    margin: 0;
+    max-width: 560px;
+    line-height: 1.5;
+  }
+
+  main {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  section.summary {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    max-width: 320px;
+  }
+
+  .summary-card {
+    background: var(--paper-raised);
+    padding: 22px 20px;
+  }
+
+  .summary-label {
+    margin: 0 0 10px;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+
+  .summary-pct {
+    margin: 0 0 6px;
+    font-family: 'Spectral', serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--teal);
+    letter-spacing: -0.01em;
+  }
+
+  .summary-detail {
+    margin: 0;
+    font-size: 12px;
+    color: var(--ink-soft);
+  }
+
+  section.book {
+    margin-top: 56px;
+  }
+
+  .book-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+
+  .book-head h2 {
+    font-family: 'Spectral', serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  .book-head h2 .tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: 3px 7px;
+  }
+
+  .stat {
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+
+  .stat strong {
+    font-family: 'Spectral', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-right: 6px;
+  }
+
+  .stat strong.good { color: var(--teal); }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--paper-raised);
+    font-size: 13px;
+    border: 1px solid var(--rule);
+  }
+
+  thead th {
+    text-align: left;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--rule);
+    white-space: nowrap;
+  }
+
+  tbody td {
+    padding: 9px 12px;
+    border-bottom: 1px solid var(--rule);
+    white-space: nowrap;
+  }
+
+  tbody tr:last-child td { border-bottom: none; }
+
+  tbody tr:hover { background: #e6eaec; }
+
+  td.ticker { font-weight: 600; letter-spacing: 0.02em; }
+
+  td.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+  .pill {
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 0.03em;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-weight: 500;
+  }
+
+  .pill.itm { background: var(--rust-soft); color: var(--rust); }
+  .pill.otm { background: var(--teal-soft); color: var(--teal); }
+
+  .pill.yes { background: var(--amber); color: #fff; }
+  .pill.no { background: transparent; color: var(--ink-soft); border: 1px solid var(--rule); }
+
+  footer {
+    max-width: 980px;
+    margin: 64px auto 0;
+    padding: 24px 24px 0;
+    border-top: 1px solid var(--rule);
+    color: var(--ink-soft);
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 640px) {
+    h1 { font-size: 30px; }
+    table { display: block; overflow-x: auto; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <p class="eyebrow">Written / Sold Options — Settlement Record</p>
+  <h1>Cash-Secured Puts</h1>
+  <p class="sub">Cash-secured puts were initially OTM. A put finishes ITM when the close sits at or below the strike.</p>
+</header>
+
+<main>
+
+  <section class="summary" id="summary-section">
+    <div class="summary-card" id="summary-puts">
+      <p class="summary-label">Cash-Secured Puts</p>
+      <p class="summary-pct" id="summary-puts-pct">—</p>
+      <p class="summary-detail" id="summary-puts-detail">—</p>
+    </div>
+  </section>
+
+  <section class="book" id="puts-section">
+    <div class="book-head">
+      <h2>Cash-Secured Puts <span class="tag">Short Put</span></h2>
+      <div class="stat" id="puts-stat"></div>
+    </div>
+    <table id="puts-table">
+      <thead>
+        <tr>
+          <th>Ticker</th>
+          <th>Option</th>
+          <th>Strike Date</th>
+          <th>Type</th>
+          <th class="num">Strike</th>
+          <th class="num">Close</th>
+          <th>ITM?</th>
+          <th>Assigned</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+</main>
+
+<footer>
+  ITM = In-The-Money at expiry (close ≤ strike). OTM = Out-Of-Money
+</footer>
+
+<script>
+  let positions = [];
+
+  function tickerFromOption(opt) {
+    const m = opt.match(/^[A-Z]+/);
+    return m ? m[0] : opt;
+  }
+
+  function fmt(n) {
+    return n.toFixed(2);
+  }
+
+  function render(type, tbodyId, statId) {
+    const rows = positions.filter(p => p.type === type);
+    const tbody = document.querySelector(tbodyId + " tbody");
+    let itmCount = 0;
+
+    rows.forEach(p => {
+      const isITM = p.close <= p.strike;
+      if (isITM) itmCount++;
+
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+        <td class="ticker">${tickerFromOption(p.option)}</td>
+        <td>${p.option}</td>
+        <td>${p.expiry}</td>
+        <td>${p.type}</td>
+        <td class="num">${fmt(p.strike)}</td>
+        <td class="num">${fmt(p.close)}</td>
+        <td><span class="pill ${isITM ? 'itm' : 'otm'}">${isITM ? "Yes" : "No"}</span></td>
+        <td><span class="pill ${p.assigned === 'Yes' ? 'yes' : 'no'}">${p.assigned}</span></td>
+      `;
+      tbody.appendChild(tr);
+    });
+
+    const pct = rows.length ? (itmCount / rows.length * 100) : 0;
+    document.querySelector(statId).innerHTML =
+      `<strong class="good">${pct.toFixed(1)}%</strong>ITM at expiry (${itmCount} of ${rows.length})`;
+
+    return { count: rows.length, itmCount, pct };
+  }
+
+  function fillSummaryCard(prefix, stats) {
+    document.querySelector(`#summary-${prefix}-pct`).textContent = `${stats.pct.toFixed(1)}%`;
+    document.querySelector(`#summary-${prefix}-detail`).textContent =
+      `${stats.itmCount} of ${stats.count} finished ITM`;
+  }
+
+  async function init() {
+    try {
+      const res = await fetch("data.json");
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      positions = await res.json();
+    } catch (err) {
+      console.error("Failed to load data.json:", err);
+      document.querySelector("main").insertAdjacentHTML(
+        "afterbegin",
+        `<p style="color:var(--rust); font-size:13px;">Could not load data.json (${err.message}). Make sure it's in the same folder as this page.</p>`
+      );
+      return;
+    }
+
+    const putStats = render("Put", "#puts-table", "#puts-stat");
+    fillSummaryCard("puts", putStats);
+  }
+
+  init();
+</script>
+
+</body>
+</html>

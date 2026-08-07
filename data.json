@@ -1,82 +1,22 @@
 [
-  {
-    "option": "U260731P00028500",
-    "expiry": "2026-07-31",
-    "type": "Put",
-    "strike": 28.5,
-    "close": 31.72,
-    "assigned": "No"
-  },
-  {
-    "option": "DPST260731P00137000",
-    "expiry": "2026-07-31",
-    "type": "Put",
-    "strike": 137.0,
-    "close": 146.04,
-    "assigned": "No"
-  },
-  {
-    "option": "T260731P00037000",
-    "expiry": "2026-07-31",
-    "type": "Put",
-    "strike": 37.0,
-    "close": 37.27,
-    "assigned": "No"
-  },
-  {
-    "option": "ZETA260724P00020500",
-    "expiry": "2026-07-24",
-    "type": "Put",
-    "strike": 20.5,
-    "close": 19.13,
-    "assigned": "Yes"
-  },
-  {
-    "option": "LW260724P00045000",
-    "expiry": "2026-07-24",
-    "type": "Put",
-    "strike": 45.0,
-    "close": 49.64,
-    "assigned": "No"
-  },
-  {
-    "option": "LW260724P00044000",
-    "expiry": "2026-07-24",
-    "type": "Put",
-    "strike": 44.0,
-    "close": 49.64,
-    "assigned": "No"
-  },
-  {
-    "option": "LW260724P00043000",
-    "expiry": "2026-07-24",
-    "type": "Put",
-    "strike": 43.0,
-    "close": 49.64,
-    "assigned": "No"
-  },
-  {
-    "option": "RNG260724P00035000",
-    "expiry": "2026-07-24",
-    "type": "Put",
-    "strike": 35.0,
-    "close": 48.36,
-    "assigned": "No"
-  },
-  {
-    "option": "LW260724P00042000",
-    "expiry": "2026-07-24",
-    "type": "Put",
-    "strike": 42.0,
-    "close": 49.64,
-    "assigned": "No"
-  },
-  {
-    "option": "LW260724P00041000",
-    "expiry": "2026-07-24",
-    "type": "Put",
-    "strike": 41.0,
-    "close": 49.64,
-    "assigned": "No"
-  }
+  {"option":"CORZ260807P00021000","expiry":"2026-08-07","type":"Put","strike":21,"close":21.01,"assigned":"No"},
+  {"option":"LYFT260807P00013500","expiry":"2026-08-07","type":"Put","strike":13.50,"close":17.46,"assigned":"No"},
+  {"option":"BILL260807P00044500","expiry":"2026-08-07","type":"Put","strike":44.50,"close":47.99,"assigned":"No"},
+  {"option":"ZETA260807P00018000","expiry":"2026-08-07","type":"Put","strike":18,"close":26.64,"assigned":"No"},
+  {"option":"TOST260807P00028000","expiry":"2026-08-07","type":"Put","strike":28,"close":34.48,"assigned":"No"},
+  {"option":"USO260807P00119000","expiry":"2026-08-07","type":"Put","strike":119,"close":117.98,"assigned":"Yes"},
+  {"option":"DPST260807P00148000","expiry":"2026-08-07","type":"Put","strike":148,"close":146.17,"assigned":"Yes"},
+  {"option":"DBX260807P00031000","expiry":"2026-08-07","type":"Put","strike":31,"close":34.81,"assigned":"No"},
+  {"option":"GTLB260807P00034000","expiry":"2026-08-07","type":"Put","strike":34,"close":38.97,"assigned":"No"},
+  {"option":"IOT260731P00037000","expiry":"2026-08-07","type":"Put","strike":37,"close":40.88,"assigned":"No"}
+  {"option":"U260731P00028500","expiry":"2026-07-31","type":"Put","strike":28.5,"close":31.72,"assigned":"No"},
+  {"option":"DPST260731P00137000","expiry":"2026-07-31","type":"Put","strike":137,"close":146.04,"assigned":"No"},
+  {"option":"T260731P00037000","expiry":"2026-07-31","type":"Put","strike":37,"close":37.27,"assigned":"No"},
+  {"option":"ZETA260724P00020500","expiry":"2026-07-24","type":"Put","strike":20.5,"close":19.13,"assigned":"Yes"},
+  {"option":"LW260724P00045000","expiry":"2026-07-24","type":"Put","strike":45,"close":49.64,"assigned":"No"},
+  {"option":"LW260724P00044000","expiry":"2026-07-24","type":"Put","strike":44,"close":49.64,"assigned":"No"},
+  {"option":"LW260724P00043000","expiry":"2026-07-24","type":"Put","strike":43,"close":49.64,"assigned":"No"},
+  {"option":"RNG260724P00035000","expiry":"2026-07-24","type":"Put","strike":35,"close":48.36,"assigned":"No"},
+  {"option":"LW260724P00042000","expiry":"2026-07-24","type":"Put","strike":42,"close":49.64,"assigned":"No"},
+  {"option":"LW260724P00041000","expiry":"2026-07-24","type":"Put","strike":41,"close":49.64,"assigned":"No"}
 ]

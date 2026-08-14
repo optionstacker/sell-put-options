@@ -1,4 +1,7 @@
 [
+  {"option":"HL260814P00016000","expiry":"2026-08-14","type":"Put","strike":16,"close":18.37,"assigned":"No"},
+  {"option":"UPST260814P00028500","expiry":"2026-08-14","type":"Put","strike":28.5,"close":38.43,"assigned":"No"},
+  {"option":"USO260814P00111000","expiry":"2026-08-14","type":"Put","strike":111,"close":126.60,"assigned":"No"},
   {"option":"CORZ260807P00021000","expiry":"2026-08-07","type":"Put","strike":21,"close":21.01,"assigned":"No"},
   {"option":"LYFT260807P00013500","expiry":"2026-08-07","type":"Put","strike":13.50,"close":17.46,"assigned":"No"},
   {"option":"BILL260807P00044500","expiry":"2026-08-07","type":"Put","strike":44.50,"close":47.99,"assigned":"No"},

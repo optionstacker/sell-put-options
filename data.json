@@ -1,4 +1,7 @@
 [
+  {"option":"RHI260821P00040000","expiry":"2026-08-21","type":"Put","strike":40,"close":44.75,"assigned":"No"},
+  {"option":"VIAV260821P00040000","expiry":"2026-08-21","type":"Put","strike":40,"close":38.90,"assigned":"Yes"},
+  {"option":"MWH260821P00030000","expiry":"2026-08-21","type":"Put","strike":30,"close":28.34,"assigned":"Yes"},
   {"option":"HL260814P00016000","expiry":"2026-08-14","type":"Put","strike":16,"close":18.37,"assigned":"No"},
   {"option":"UPST260814P00028500","expiry":"2026-08-14","type":"Put","strike":28.5,"close":38.43,"assigned":"No"},
   {"option":"USO260814P00111000","expiry":"2026-08-14","type":"Put","strike":111,"close":126.60,"assigned":"No"},

@@ -1,4 +1,7 @@
 [
+  {"option":"MP260904P00052000","expiry":"2026-09-04","type":"Put","strike":52,"close":54.54,"assigned":"No"},
+  {"option":"XE260904P00016000","expiry":"2026-09-04","type":"Put","strike":16,"close":99.32,"assigned":"No"},
+  {"option":"GDXJ260904P00120000","expiry":"2026-09-04","type":"Put","strike":120,"close":129.07,"assigned":"No"},
   {"option":"BMNR260828P00022000","expiry":"2026-08-28","type":"Put","strike":22,"close":23.80,"assigned":"No"},
   {"option":"UPST260828P00028000","expiry":"2026-08-28","type":"Put","strike":28,"close":29.07,"assigned":"No"},
   {"option":"NAIL260828P00038500","expiry":"2026-08-28","type":"Put","strike":38.5,"close":38.33,"assigned":"Yes"},

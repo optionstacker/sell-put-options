@@ -1,4 +1,7 @@
 [
+  {"option":"FIG260911P00021500","expiry":"2026-09-11","type":"Put","strike":21.5,"close":23.20,"assigned":"No"},
+  {"option":"SMCI260911P000380000","expiry":"2026-09-11","type":"Put","strike":38,"close":40.10,"assigned":"No"},
+  {"option":"GDXJ260911P00123000","expiry":"2026-09-11","type":"Put","strike":123,"close":125.37,"assigned":"No"},
   {"option":"MP260904P00052000","expiry":"2026-09-04","type":"Put","strike":52,"close":54.54,"assigned":"No"},
   {"option":"XE260904P00016000","expiry":"2026-09-04","type":"Put","strike":16,"close":99.32,"assigned":"No"},
   {"option":"GDXJ260904P00120000","expiry":"2026-09-04","type":"Put","strike":120,"close":129.07,"assigned":"No"},

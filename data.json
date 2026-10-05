@@ -1,4 +1,7 @@
 [
+  {"option":"NET261002P00330000","expiry":"2026-10-02","type":"Put","strike":33,"close":349.07,"assigned":"No"}, 
+  {"option":"AMBA261002P00067000","expiry":"2026-10-02","type":"Put","strike":67,"close":68.65,"assigned":"No"}, 
+  {"option":"LABU261002P00250000","expiry":"2026-10-02","type":"Put","strike":250,"close":248.72,"assigned":"Yes"},
   {"option":"IONQ260925P00040000","expiry":"2026-09-25","type":"Put","strike":40,"close":45.48,"assigned":"No"},
   {"option":"VKTX260925P00038000","expiry":"2026-09-25","type":"Put","strike":38,"close":35.56,"assigned":"Yes"},
   {"option":"OKLO260925P00038000","expiry":"2026-09-25","type":"Put","strike":38,"close":38.04,"assigned":"No"},

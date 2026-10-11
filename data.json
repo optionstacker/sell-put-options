@@ -1,4 +1,9 @@
 [
+  {"option":"CVNA261009P00060000","expiry":"2026-10-09","type":"Put","strike":60,"close":63.73,"assigned":"No"}, 
+  {"option":"DOCN261009P00130000","expiry":"2026-10-09","type":"Put","strike":130,"close":134.82,"assigned":"No"}, 
+  {"option":"FLY261009P00021000","expiry":"2026-10-09","type":"Put","strike":21,"close":20.00,"assigned":"Yes"},
+  {"option":"FSLY261009P00024500","expiry":"2026-10-09","type":"Put","strike":24.5,"close":29.30,"assigned":"No"},
+  {"option":"DPST261009P00108000","expiry":"2026-10-09","type":"Put","strike":108,"close":107.20,"assigned":"Yes"},
   {"option":"NET261002P00330000","expiry":"2026-10-02","type":"Put","strike":33,"close":349.07,"assigned":"No"}, 
   {"option":"AMBA261002P00067000","expiry":"2026-10-02","type":"Put","strike":67,"close":68.65,"assigned":"No"}, 
   {"option":"LABU261002P00250000","expiry":"2026-10-02","type":"Put","strike":250,"close":248.72,"assigned":"Yes"},

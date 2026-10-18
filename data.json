@@ -1,4 +1,9 @@
 [
+  {"option":"GME261016P00024500","expiry":"2026-10-16","type":"Put","strike":24.5,"close":26.81,"assigned":"No"},
+  {"option":"TLN261016P00350000","expiry":"2026-10-16","type":"Put","strike":350,"close":354.81,"assigned":"No"},
+  {"option":"PENG261016P00065000","expiry":"2026-10-16","type":"Put","strike":65,"close":57.10,"assigned":"Yes"},
+  {"option":"GME261016P00027000","expiry":"2026-10-16","type":"Put","strike":27,"close":26.81,"assigned":"Yes"},
+  {"option":"FAS261016P00143000","expiry":"2026-10-16","type":"Put","strike":143,"close":156.61,"assigned":"No"},
   {"option":"CVNA261009P00060000","expiry":"2026-10-09","type":"Put","strike":60,"close":63.73,"assigned":"No"}, 
   {"option":"DOCN261009P00130000","expiry":"2026-10-09","type":"Put","strike":130,"close":134.82,"assigned":"No"}, 
   {"option":"FLY261009P00021000","expiry":"2026-10-09","type":"Put","strike":21,"close":20.00,"assigned":"Yes"},
